@@ -120,12 +120,12 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("TurnRightRate", this, &AMainCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMainCharacter::LookUp);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AMainCharacter::LookUpAtRate);
-	PlayerInputComponent->BindAction("Target", IE_Pressed,this, &AMainCharacter::StartTargeting);
-	PlayerInputComponent->BindAction("Target", IE_Released,this, &AMainCharacter::StopTargeting);
-	PlayerInputComponent->BindAction("Sprint", IE_Pressed,this, &AMainCharacter::StartSprint);
-	PlayerInputComponent->BindAction("Sprint", IE_Released,this, &AMainCharacter::StopSprint);
-	PlayerInputComponent->BindAction("Slow", IE_Pressed,this, &AMainCharacter::StartSlow);
-	PlayerInputComponent->BindAction("Slow", IE_Released,this, &AMainCharacter::EscapeAction);
+	// PlayerInputComponent->BindAction("Target", IE_Pressed,this, &AMainCharacter::StartTargeting);
+	// PlayerInputComponent->BindAction("Target", IE_Released,this, &AMainCharacter::StopTargeting);
+	// PlayerInputComponent->BindAction("Sprint", IE_Pressed,this, &AMainCharacter::StartSprint);
+	// PlayerInputComponent->BindAction("Sprint", IE_Released,this, &AMainCharacter::StopSprint);
+	// PlayerInputComponent->BindAction("Slow", IE_Pressed,this, &AMainCharacter::StartSlow);
+	// PlayerInputComponent->BindAction("Slow", IE_Released,this, &AMainCharacter::EscapeAction);
 	PlayerInputComponent->BindAction("Escape", IE_Pressed,this, &AMainCharacter::QuitAction);
 
 

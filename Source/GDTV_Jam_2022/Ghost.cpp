@@ -167,7 +167,9 @@ void AGhost::OnDeath_Implementation()
 	if(mode)
 	{
 		mode->PawnKilled(this);
-	}IsDead = true;
+	}
+
+	IsDead = true;
 	DetachFromControllerPendingDestroy();
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	
